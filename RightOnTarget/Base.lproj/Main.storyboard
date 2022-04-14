@@ -62,10 +62,19 @@
                                     <action selector="checkNumber" destination="BYZ-38-t0r" eventType="touchUpInside" id="c9W-KO-HN0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1w-bv-0Dc">
+                                <rect key="frame" x="761" y="362" width="115" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="О программе"/>
+                                <connections>
+                                    <action selector="showNextScreen" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z1e-ng-vPK"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.99376179793206332" green="0.69393090781567146" blue="0.60772221301880769" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="y1w-bv-0Dc" secondAttribute="trailing" constant="20" id="0Ro-93-rv3"/>
                             <constraint firstItem="ngG-Gj-IYK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8iE-ra-W2K"/>
                             <constraint firstItem="ngG-Gj-IYK" firstAttribute="top" secondItem="F68-jj-DPt" secondAttribute="bottom" constant="30" id="C9p-KG-Pev"/>
                             <constraint firstItem="F68-jj-DPt" firstAttribute="top" secondItem="dmz-ZL-7XC" secondAttribute="bottom" constant="30" id="O3Q-Te-Y6X"/>
@@ -73,8 +82,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dmz-ZL-7XC" secondAttribute="trailing" constant="25" id="WWy-WU-4l2"/>
                             <constraint firstItem="dmz-ZL-7XC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="cAt-EQ-Tah"/>
                             <constraint firstItem="dmz-ZL-7XC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="d9p-3u-q2D"/>
+                            <constraint firstItem="y1w-bv-0Dc" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pYO-fO-sOR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FXT-nJ-IRL"/>
                     <connections>
                         <outlet property="label" destination="ngG-Gj-IYK" id="dnh-0f-5XE"/>
                         <outlet property="slider" destination="dmz-ZL-7XC" id="Pev-tZ-Tsw"/>
@@ -83,6 +94,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="198.88392857142856" y="69.565217391304358"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="iCW-qN-Dki">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="PAM-aV-Z5b" customClass="SecondViewController" customModule="RightOnTarget" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mg8-FM-QR2" customClass="Second">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcz-ul-ZTL">
+                                <rect key="frame" x="415.5" y="191.5" width="65.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Назад"/>
+                                <connections>
+                                    <action selector="hideCurrentScene" destination="PAM-aV-Z5b" eventType="touchUpInside" id="H2W-as-s8I"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h2f-YJ-j6G"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jcz-ul-ZTL" firstAttribute="centerX" secondItem="Mg8-FM-QR2" secondAttribute="centerX" id="kcM-sQ-dk3"/>
+                            <constraint firstItem="jcz-ul-ZTL" firstAttribute="centerY" secondItem="Mg8-FM-QR2" secondAttribute="centerY" id="xXU-Tu-0N4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MZX-65-Qx8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Oe4-YT-ldY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="69"/>
         </scene>
     </scenes>
     <resources>
