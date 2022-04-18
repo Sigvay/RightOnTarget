@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2913B7AF280828AB008985BA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2913B7AE280828AB008985BA /* SecondViewController.swift */; };
+		2913B7B228086DE4008985BA /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2913B7B128086DE4008985BA /* Game.swift */; };
 		29E953252804B3EF0085E380 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E953242804B3EF0085E380 /* AppDelegate.swift */; };
 		29E953272804B3EF0085E380 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E953262804B3EF0085E380 /* SceneDelegate.swift */; };
 		29E953292804B3EF0085E380 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E953282804B3EF0085E380 /* ViewController.swift */; };
@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2913B7AE280828AB008985BA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2913B7B128086DE4008985BA /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		29E953212804B3EF0085E380 /* RightOnTarget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RightOnTarget.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E953242804B3EF0085E380 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		29E953262804B3EF0085E380 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2913B7B028086DA1008985BA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				2913B7B128086DE4008985BA /* Game.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		29E953182804B3EE0085E380 = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +66,10 @@
 		29E953232804B3EF0085E380 /* RightOnTarget */ = {
 			isa = PBXGroup;
 			children = (
+				2913B7B028086DA1008985BA /* model */,
 				29E953242804B3EF0085E380 /* AppDelegate.swift */,
 				29E953262804B3EF0085E380 /* SceneDelegate.swift */,
 				29E953282804B3EF0085E380 /* ViewController.swift */,
-				2913B7AE280828AB008985BA /* SecondViewController.swift */,
 				29E9532A2804B3EF0085E380 /* Main.storyboard */,
 				29E9532D2804B3F00085E380 /* Assets.xcassets */,
 				29E9532F2804B3F00085E380 /* LaunchScreen.storyboard */,
@@ -141,10 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2913B7AF280828AB008985BA /* SecondViewController.swift in Sources */,
 				29E953292804B3EF0085E380 /* ViewController.swift in Sources */,
 				29E953252804B3EF0085E380 /* AppDelegate.swift in Sources */,
 				29E953272804B3EF0085E380 /* SceneDelegate.swift in Sources */,
+				2913B7B228086DE4008985BA /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,7 +314,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexandr-Merkulov.RightOnTarget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -335,7 +343,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "Alexandr-Merkulov.RightOnTarget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
